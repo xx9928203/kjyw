@@ -5,3 +5,8 @@ pip3 install numpy -i https://pypi.mirrors.ustc.edu.cn/simple/
 
 pip3 install matplotlib -i https://pypi.tuna.tsinghua.edu.cn/simple/
 pip3 install numpy -i https://pypi.tuna.tsinghua.edu.cn/simple/
+
+临时
+pip3 install stmp -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com  
+永久
+vi ~/.pip/pip.config
