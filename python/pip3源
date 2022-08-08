@@ -1,0 +1,7 @@
+pip3 install matplotlib -i https://pypi.douban.com/simple/ 
+pip3 install numpy -i https://pypi.douban.com/simple/ 
+pip3 install matplotlib -i https://pypi.mirrors.ustc.edu.cn/simple/
+pip3 install numpy -i https://pypi.mirrors.ustc.edu.cn/simple/
+
+pip3 install matplotlib -i https://pypi.tuna.tsinghua.edu.cn/simple/
+pip3 install numpy -i https://pypi.tuna.tsinghua.edu.cn/simple/
