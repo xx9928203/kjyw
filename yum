@@ -35,6 +35,10 @@ gpgkey=https://mirrors.tuna.tsinghua.edu.cn/centos-vault/6.4/os/x86_64/RPM-GPG-K
 
 以上内容创建文件
 /etc/yum.repos.d/CentOs-Base.repo
+
+更新yum配置
+echo "sslverify=false" >> /etc/yum.conf
+
 更新源
 yum clean all                                                                                                                                           
 yum makecache  
