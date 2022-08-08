@@ -30,3 +30,12 @@ baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos-vault/6.4/centosplus/x86_64/
 gpgcheck=1
 enabled=0
 gpgkey=https://mirrors.tuna.tsinghua.edu.cn/centos-vault/6.4/os/x86_64/RPM-GPG-KEY-CentOS-6
+
+
+
+以上内容创建文件
+/etc/yum.repos.d/CentOs-Base.repo
+更新源
+yum clean all                                                                                                                                           
+yum makecache  
+
