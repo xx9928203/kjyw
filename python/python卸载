@@ -1,0 +1,16 @@
+二、卸载python
+查看当前版本信息
+[root@docker ~]# python --version
+Python 2.7.5
+[root@docker ~]# python3 --version
+Python 3.6.8
+
+卸载pyhton3
+注意卸载的时候python后跟的2或3，若什么都不跟的话，会全部删除
+rpm -qa|grep python3|xargs rpm -ev --allmatches --nodeps
+
+删除所有残余文件
+whereis python3 |xargs rm -frv
+
+查看现有安装的python
+whereis python
