@@ -10,7 +10,7 @@ tar -xvJf  Python-3.7.4.tar.xz
 
 mkdir -p /usr/local/python3
 cd Python-3.7.4
-./configure --prefix=/usr/local/python3
+./configure --prefix=/usr/local/python3 --enable-optimizations --with-ensurepip=install
 make && make install
 
 ln -s /usr/local/python3/bin/python3 /usr/local/bin/python3
