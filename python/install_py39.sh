@@ -23,8 +23,11 @@ export LDFLAGS="-L/usr/local/openssl/lib"
   --prefix=/usr/local/python3.9
 make && make install
 
-ln -s /usr/local/python3/bin/python3 /usr/local/bin/python3
-ln -s /usr/local/python3/bin/pip3 /usr/local/bin/pip3
+echo "/usr/local/python3.9/lib" | sudo tee /etc/ld.so.conf.d/python3.9.conf
+sudo ldconfig
+
+ln -s /usr/local/python3.9/bin/python3 /usr/local/bin/python3
+ln -s /usr/local/python3.9/bin/pip3 /usr/local/bin/pip3
 
 python3 -V
 pip3 -V
