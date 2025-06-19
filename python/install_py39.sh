@@ -21,7 +21,7 @@ export LDFLAGS="-L/usr/local/openssl/lib"
   --with-system-ffi \
   --with-computed-gotos \
   --prefix=/usr/local/python3.9
-make && make install
+make -j$(nproc) && make install
 
 echo "/usr/local/python3.9/lib" | sudo tee /etc/ld.so.conf.d/python3.9.conf
 sudo ldconfig
