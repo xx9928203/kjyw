@@ -6,6 +6,6 @@ cd openssl-1.1.1u
 make -j$(nproc)
 sudo make install
 
-echo "usr/local/openssl/lib/" | sudo tee /etc/ld.so.conf.d/openssl-1.1.1u.conf
+echo "/usr/local/openssl/lib/" | sudo tee /etc/ld.so.conf.d/openssl-1.1.1u.conf
 sudo ldconfig
 openssl version
