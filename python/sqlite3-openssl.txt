@@ -1,0 +1,24 @@
+1.先安装sqlite3
+下载https://www.sqlite.org/download.html
+
+tar -zxvf sqlite-autoconf-3390400.tar.gz
+
+cd sqlite-autoconf-3390400
+
+./configure --prefix=/usr/local/sqlite3
+
+make && make install
+
+添加环境变量
+export LD_LIBRARY_PATH=/usr/local/sqlite3/lib
+export PATH=/usr/local/sqlite3/bin:$PATH
+
+验证
+sqlite3 --version
+
+
+2.安装openssl
+添加环境变量
+export LD_LIBRARY_PATH=/usr/local/sqlite3/lib
+export PATH=/usr/local/sqlite3/bin:$PATH
+export PATH=/usr/local/openssl/bin:$PATH
